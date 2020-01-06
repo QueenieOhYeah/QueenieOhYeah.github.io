@@ -1,0 +1,54 @@
+\hypertarget{page1_d}{}\doxysection{Download}\label{page1_d}
+Click the green button labelled download at my github repository at \href{https://github.umn.edu/umn-csci-3081-f19/repo-qiuxx283}{\texttt{ Click here}} . The program is located in the project directory. \hypertarget{page1_s}{}\doxysection{Steps to run the Simulators}\label{page1_s}
+\hypertarget{page1_c}{}\doxysubsection{Compile the program}\label{page1_c}
+
+\begin{DoxyEnumerate}
+\item Open the terminal in your own machine, direct to the project directory. Type \char`\"{}make\char`\"{} to compile the program. 
+\end{DoxyEnumerate}\hypertarget{page1_r}{}\doxysubsection{Run the Visualization Simulation}\label{page1_r}
+The visualization simulation relies on files in Lab machines, therefore connection to Lab mechines in the University of Minnesota is required to run the visualization simulation. \hypertarget{page1_Step}{}\doxysubsubsection{by step for C\+S\+E Labs or vole users}\label{page1_Step}
+
+\begin{DoxyEnumerate}
+\item Navigate to base project directory(project/) ~\newline
+
+\item Start server by entering \char`\"{}./build/bin/vis\+\_\+sim $<$port\+\_\+number$>$\char`\"{} in your terminal. ~\newline
+$\ast$\+Notice\+: $<$port\+\_\+number$>$ can be anything. Try and pick numbers above 8000 and not multiples of 10. $\ast$\+Notice\+: You must run by doing ./build/bin/vis\+\_\+sim $<$port\+\_\+number$>$. You cannot cd to bin/ and run ./vis\+\_\+sim $<$port\+\_\+number$>$. ~\newline
+
+\item Navigate to the following address on your V\+O\+LE browser (Firefox/\+Chrome)\+: ~\newline
+\href{http://127.0.0.1:}{\texttt{ http\+://127.\+0.\+0.\+1\+:}}$<$port\+\_\+number$>$/web\+\_\+graphics/project.html
+\end{DoxyEnumerate}\hypertarget{page1_Step}{}\doxysubsubsection{by step for C\+S\+E Labs or vole users}\label{page1_Step}
+You can S\+SH using a Windows machine with Git Bash\+: ssh -\/L $<$port number$>$=\char`\"{}\char`\"{}$>$\+:127.\+0.\+0.\+1\+:$<$port\+\_\+number$>$ $<$x500$>$$<$cse\+\_\+labs\+\_\+computer$>$.cselabs.\+umn.\+edu
+\begin{DoxyEnumerate}
+\item Navigate to base project directory(project/) ~\newline
+
+\item Start server by entering \char`\"{}./build/bin/vis\+\_\+sim $<$port\+\_\+number$>$\char`\"{} in your terminal. ~\newline
+$\ast$\+Notice\+: $<$port\+\_\+number$>$ can be anything. Try and pick numbers above 8000 and not multiples of 10. $\ast$\+Notice\+: You must run by doing ./build/bin/vis\+\_\+sim $<$port\+\_\+number$>$. You cannot cd to bin/ and run ./vis\+\_\+sim $<$port\+\_\+number$>$. ~\newline
+
+\item Navigate to the following address on your L\+O\+C\+AL machine using your L\+O\+C\+AL browser (Firefox/\+Chrome)\+: ~\newline
+\href{http://127.0.0.1:}{\texttt{ http\+://127.\+0.\+0.\+1\+:}}$<$port\+\_\+number$>$/web\+\_\+graphics/project.html
+\end{DoxyEnumerate}\hypertarget{page1_r}{}\doxysubsection{Run the Visualization Simulation}\label{page1_r}
+The program provides a simulator that enables the users to specified the features of the domain elements in the program involving busses, routes and stops. Since it is not using visualized graphics, it is not necessary to connect to the Lab machine in the University of Minnesota. \hypertarget{page1_r1}{}\doxysubsubsection{Run the default congifuration simulation}\label{page1_r1}
+
+\begin{DoxyEnumerate}
+\item Navigate to base project directory(project/) ~\newline
+
+\item Start server by entering \char`\"{}./build/bin/config\+\_\+sim\char`\"{} in your terminal. Then you will see the simulation results printed on the terminal. ~\newline
+
+\end{DoxyEnumerate}\hypertarget{page1_a}{}\doxysubsubsection{Add your own configuration and run the simulator}\label{page1_a}
+
+\begin{DoxyEnumerate}
+\item Navigate to project/config directory
+\item Create your own configuration file and save in the directory as .txt ~\newline
+Format of the configuration file\+: ~\newline
+R\+O\+U\+T\+E\+\_\+\+G\+E\+N\+E\+R\+AL, $<$\+Bus\+\_\+name$>$ ~\newline
+R\+O\+U\+TE, $<$\+Route\+\_\+named$>$ ~\newline
+S\+T\+OP, $<$stop\+\_\+name$>$, $<$stop\+\_\+longitute$>$, $<$stop\+\_\+latitute$>$, $<$passenger\+\_\+generation\+\_\+probabilities$>$ ~\newline
+(Multiple stops) ~\newline
+R\+O\+U\+TE, $<$route\+\_\+name$>$ ~\newline
+S\+T\+OP, $<$stop\+\_\+name$>$, $<$stop\+\_\+longitute$>$, $<$stop\+\_\+latitute$>$, $<$passenger\+\_\+generation\+\_\+probabilities$>$ ~\newline
+(Multiple stops) ~\newline
+$\ast$\+Notice\+: Modify the content in $<$$>$. $\ast$\+Notice\+: the passenger generation probabilities should be 0 at the end stop of each route. ~\newline
+$\ast$\+Notice\+: the format of the configuration file can refer to config.\+txt which is the default configuration file for the program. ~\newline
+
+\item Start server by entering \char`\"{}./build/bin/config\+\_\+sim $<$config\+\_\+file\+\_\+name$>$\char`\"{} in your terminal. Then you will see the simulation results printed on the terminal. ~\newline
+
+\end{DoxyEnumerate}

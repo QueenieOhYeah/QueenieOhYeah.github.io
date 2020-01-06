@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>UMNTransitSystem - Queenie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="/" class="image avatar"><img src="images/me2.jpg" alt="" /></a>
+					<h1><strong>I am Queenie Qiu</strong>, a robot enthusiast, <br />
+					and creative thinker.<br />
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>UMN Transit System Simulation </h2>
+						</header>
+						<p><em>Project Type: Software</em>
+						<br>
+						<em>Role: Project designer, Software Engineer</em>.</p>
+						<p> This is an individual project in CSCI3081W, titled Program Design and Development, offered by University of Minnesota. The goal of this software project is to develop a robust transit simulator in which simulations can be controlled via external configuration (without code change) and be visualized within a graphics window. The default configuration of the simulation uses the map and routes of the campus busses of the University of Minnesota.
+						<p>
+						<ul class="actions">
+							<li><a href="cv.pdf" class="button">View Demo on Visualization Simulation</a></li>
+						</ul>
+						<ul class="actions">
+							<li><a href="cv.pdf" class="button">View Demo on Comfiguration Simulation</a></li>
+						</ul>
+					</section>
+
+
+				<!-- Four -->
+					<section id="four">
+						<h3>My Work</h3>
+
+						<section>
+							<p>The design, development and implementation of the project was mainly done by me with assistent from CSCI 3081 instructor crew. The realization of the project was divided in steps throughout the entire semester.
+							<br> <br>
+							<b>Design Process:</b> I used a UML diagram to visualize a system in all phases of software development life-cycle. <a href="UML.pdf">View the UML</a>
+							<br> <br>
+							<b>Iteration 1:</b> The first iteration is focused on building domain entities and getting practiced in the software development process. Being supported by CSCI3081 team, I constructed classes of building domain entities for a transit system such as Bus, Route, Stop and Passenger. The code is organized such that simulation behavior (i.e. the model) is separate from the visualization (i.e. the view), which allows for automated unit testing using Google Test. Therefore, preliminary unit tests were conducted to test each domain entity to make sure they had the accurate functionality. In addition, there have been a few entities which have been made into abstractions to allow for extension. The Simulator is the primary driver of the application. In iteration 1, the only implementation of this was the LocalSimulator which was relatively primitive. It was hard-coded with the campus's transit system in mind and displayed the simulation results on Terminal. Although I created an alternative simulator scenario that output the results in a file, there was no external control of the simulation; it could only be changed by modifying the code.
+							<br> <br>
+							<b>Iteration 2:</b> While the hard-coded simulator is not ideal, I added additional structures in domain entities to realize the visualization of the simulation and created a new configuration simulator. The configuration simulator takes in the configuration file specified by the users and runs simulation on it. To verify the functionality, heavy unit tests and integration tests were constructed.
+							<br> <br>
+							<b>Iteration 3:</b> I extended some abstract classes to implement regression tests on the program which is essential for further development of the project. I also refactored the program to make it into a clearer and robuster version.
+							<br> <br>
+							<b>Documentation:</b> I used Doxygen compliant comments to comment on my code and then automatically generate code documentation. I also wrote a User Guide and a Developer Guide for potential program users.
+							<br> <br>
+							<b>Testing and code style checking:</b> For testing, we adopted google tests for unit testing. For code style checking, we used the CSE-check-style tests which had developed by the Computer Science Department, University of Minnesota, Twin Cities. The whole project’s codes satisfied the Google coding style after the style check tests has been implemented.
+							</p>
+							<hr />
+							<header>
+								<h3>Meaning to Me</h3>
+								<pr>
+							<p> As a person who is always driven to create things, this is the first time that I developed functional softwares with my CSCI 3081 instructor team. In the process of implementing the transit system simulation, I did most of the coding work,  thanks to the advice from my instructors team. I learned a lot of software design methodology and put them into use. For example, I discovered the concept of UML diagram and created one for this project. In this way I designed the structure of the program. Also, I got to know the importance of testing and adopted different testing methods such as unit testing, integration testing and regression testing. Apart from these, It was my first time making detailed documentation on a program. Literally, this project provided me with throughout experience and idea on how to develop a software application.
+							</p>
+							<hr />
+							<header>
+								<h3>Resources</h3>
+								<pr>
+								<p>Github: <a href="https://github.com/QueenieOhYeah/UMN-Transit-Simulation-System">Click here to view</a>
+								<br>Mainpage of the project: <a href="html/index.html">Click here to view</a>
+							  </p>
+							</header>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Facebook</span></a></li>-->
+						<li><a href="https://github.com/QueenieOhYeah" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+						<li><a href="mailto:queenieohyeah@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Ziqian(Queenie) Qiu</li> <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
