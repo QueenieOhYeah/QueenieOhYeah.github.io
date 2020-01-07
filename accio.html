@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	Strata by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Accio - Queenie</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<div class="inner">
+					<a href="index.html" class="image avatar"><img src="images/me2.jpg" alt="" /></a>
+					<h1>Hi, <strong>I am Queenie Qiu</strong>, a robot enthusiast, <br />
+					and creative thinker.<br/>
+				</div>
+			</header>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- One -->
+					<section id="one">
+						<header class="major">
+							<h2>"Accio"</h2>
+						</header>
+						<p><em>Project Type: Robotics / Software / Hardware</em>
+						<br>
+						<em>Role: Project Leader, Software Engineer, Hardware Engineer</em>.</p>
+						<p> Accio is the incantation of summoning charm originated from our favourite book, ‘Harry Potter’. Witches uttering the spell of ‘Accio Firebolt’ would call the required broomstick to fly into their hands. Inspired by this magic, I came up with the idea of requesting things orally and having them delivered to us by robots. The job is designed to be accomplished as the result of  collaboration of two robots, Turtlebot and  Baxter.
+						<p>
+						<pr>
+						The procedure of the application is like this. Firstly, Turtlebot is told what is wanted among the 6 classes chosen. Then it goes to Baxter, and sends it the corresponding index of the desired class. After this, the deep neural network is triggered to train images and the resulting model is adapted to detect different objects on the table. The process returns the coordinates of the desired object. Then Baxter grabs it by implementing inverse kinematics and puts it on Turtlebot. Turtlebot will wait until it gets the object, and then takes the object back to the commander.
+						<p>
+						<pr>
+						This is an original and independent group project for Robotics class, involving five segments, which are speech recognition, object detection, robot arm manipulation, turtlebot motion planning as well as communication.
+						 </p>
+						<ul class="actions">
+							<li><a href="https://youtu.be/ETwIPjfVKnc" class="button">View Demo</a></li>
+						</ul>
+					</section>
+
+
+				<!-- Four -->
+					<section id="four">
+						<h3>My Contribution</h3>
+
+						<section>
+							<p>While the multi-robotics system includes several interdependent tasks, my job was mainly to deal with the manipulation of the robot arm and the communication between two robots since they were controlled by separate computers. I took advantage of a Moveit!, a robotic manipulation platform that runs on top of ROS (Robot Operating System) to implement inverse Kinematics on the robot arm. For the reason that data transmission is required between Baxter and Turtlebot, an extra 915MHz module, Readytosky 3DR Radio Wireless Telemetry Kit was chosen to accomplish the communication between them. The kit adapted the transmission mode of Standard TTL UART. An index corresponding to the object  that had been extracted from the speech recognition was transmitted.</p>
+							<hr />
+							<header>
+								<h3>Meaning to Me</h3>
+								<pr>
+							<p>This is one of the work that I am proud of and I was especially dedicated to this project for several reasons. In the previous class I had taken on Artificial Intelligence (for which I wrote a report on the prospective on the future multi-robotic applications), I had been curious about the multi-robotic system. Being a believer that multi-robotics is the solution to many real-world problems that are too complex for us human beings to complete, I was delighted to take part in the development of a concrete project on multi-robotics development. In addition, this project provided me an opportunity to learn independently on the Robotic Operation System which is the bedrock for robotic development and a basic skill for developers. It even drove me to dig deeper into ROS through additional independent study beyond this class. </p>
+							<hr />
+							<header>
+								<h3>Resources</h3>
+								<pr>
+								<p>Github: <a href="https://github.com/QueenieOhYeah/Accio">Click here to view</a><br>Project Report: <a href="Accio_Report.pdf">Click here to view</a></p>
+							</header>
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<!--<li><a href="#" class="icon brands fa-twitter"><span class="label">Facebook</span></a></li>-->
+						<li><a href="https://github.com/QueenieOhYeah" class="icon brands fa-github"><span class="label">Github</span></a></li>
+						<!--<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>-->
+						<li><a href="mailto:queenieohyeah@gmail.com" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+					<ul class="copyright">
+						<li>&copy; Ziqian(Queenie) Qiu</li> <!--<li>Design: <a href="http://html5up.net">HTML5 UP</a></li> -->
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
